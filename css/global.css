@@ -619,12 +619,12 @@ li.antispam {
 
 #about li:nth-child(5) img {
     float: left !important;
-    width: 46%
+    width: 40%
 }
 
 #about li:nth-child(6) img {
     float: right !important;
-    width: 46%
+    width: 40%
 }
 
 #cloud {
