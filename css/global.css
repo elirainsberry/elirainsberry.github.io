@@ -617,6 +617,12 @@ li.antispam {
     padding-top: 1.5em
 }
 
+#about li:nth-child(4) img {
+    float: right !important;
+    margin-left: 2em;
+    margin-bottom: .1em
+}
+
 #about li:nth-child(5) img {
     float: left !important;
     width: 40%
