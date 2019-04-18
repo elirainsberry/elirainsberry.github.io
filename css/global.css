@@ -213,7 +213,7 @@ iframe {
 div.project_icons {
     font-family: "Roboto"
     width: 100%
-}
+}s
 
 a.icon_blog {
     position: absolute
@@ -319,6 +319,12 @@ a.icon_blog {
         letter-spacing: -1.5vw
     }
 
+    .project_icons img {
+        float: left !important;
+        width: 20%;
+        height: 20%;  
+    }
+
     a.icon_project {
         font-size: 8vw
     }
@@ -370,6 +376,12 @@ a.icon_blog {
         bottom: 7.75em;
         margin-left: -.6em;
         letter-spacing: -1.2em
+    }
+
+    .project_icons img {
+        float: left !important;
+        width: 20%;
+        height: 20%;  
     }
 
     a.icon_project {
@@ -437,6 +449,12 @@ a.icon_blog {
         bottom: 14vw;
         left: 3vw;
         letter-spacing: -1.5vw
+    }
+
+    .project_icons img {
+        float: left !important;
+        width: 20%;
+        height: 20%;  
     }
 
     a.icon_project {
