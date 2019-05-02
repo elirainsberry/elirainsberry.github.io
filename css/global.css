@@ -312,19 +312,6 @@ a.icon_blog {
         font-size: 1.75vw
     }
 
-    .project_icons {
-        position: absolute;
-        bottom: 9.5vw;
-        margin-left: -.75vw;
-        letter-spacing: -1.5vw
-    }
-
-    .project_icons img {
-        float: left !important;
-        width: 20%;
-        height: 20%;  
-    }
-
     a.icon_project {
         font-size: 8vw
     }
@@ -371,17 +358,12 @@ a.icon_blog {
         font-size: 1.4em
     }
 
-    .project_icons {
-        position: absolute;
-        bottom: 7.75em;
-        margin-left: -.6em;
-        letter-spacing: -1.2em
-    }
-
     .project_icons img {
         float: left !important;
-        width: 20%;
-        height: 20%;  
+        bottom: 7.75em;
+        margin-left: -.025em;        
+        width: auto;
+        height: auto;  
     }
 
     a.icon_project {
@@ -389,7 +371,7 @@ a.icon_blog {
     }
 
     a.icon_album {
-        font-size: 5.6em
+        font-size: 7em
     }
 
     a.icon_blog {
@@ -444,25 +426,12 @@ a.icon_blog {
         position: absolute
     }
 
-    .project_icons {
-        position: absolute;
-        bottom: 14vw;
-        left: 3vw;
-        letter-spacing: -1.5vw
-    }
-
-    .project_icons img {
-        float: left !important;
-        width: 20%;
-        height: 20%;  
-    }
-
     a.icon_project {
         font-size: 11vw
     }
 
     a.icon_album {
-        font-size: 10vw
+        font-size: 7vw
     }
 
     a.icon_blog {
