@@ -361,7 +361,7 @@ a.icon_blog {
     .project_icons img {
         float: left !important;
         bottom: 7.75em;
-        margin-left: -.025em;        
+        margin-left: 0.1em;        
         width: auto;
         height: auto;  
     }
