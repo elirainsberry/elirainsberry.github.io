@@ -23,6 +23,36 @@
 
 <meta name="author" content="eli rainsberry">
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  height: 10px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .events img {
+    width: 100%;	
+  }
+}
+</style>
+
 </head>
 
 <body ontouchstart="">
@@ -43,14 +73,15 @@
 
 
 <div id="events">
-<img src="images/image-lineart.png" width="600px" height="709px" alt="eli"></a>
+<img src="images/image-lineart.png" alt="eli"></a>
 </div> 
 
 <center>
 
-<br>
-<img src="images/text-support.png" width="100px" height="16px" alt="support"></a>
-<br>
+<div class="row">
+  <div class="column">
+    <h4><img src="images/text-support.png" width="100px" height="16px" alt="support"></a>
+    <br>
 <a href="http://elirainsberry.bandcamp.com"><img src="images/nav_bc.png" width="50px" height="50px" alt="bandcamp"></a>
 
 <a href="https://www.itch.io/elirainsberry"><img src="images/nav_itch.png" width="50px" height="50px" alt="itch.io"></a>
@@ -60,12 +91,12 @@
 <a href="http://paypal.me/lizrainsberry"><img src="images/nav_paypal.png" width="50px" height="50px" alt="paypal"></a>
 
 <a href="http://ko-fi.com/elirainsberry"><img src="images/nav_kofi.png" width="60px" height="60px" alt="ko-fi"></a>
+    </h4>
 
-<br>
-<br>
-<img src="images/text-stream.png" width="100px" height="16px" alt="stream"></a>
-<br>
-
+  </div>
+  <div class="column">
+    <h4><img src="images/text-stream.png" width="100px" height="16px" alt="stream"></a>
+    <br>
 <a href="http://soundcloud.com/elirainsberry"><img src="images/nav_sc.png" width="60px" height="60px" alt="soundcloud"></a>
 
 <a href="https://www.youtube.com/channel/UCv1fHq4h_kGAvQcpq0sAcBA"><img src="images/nav_yt.png" width="55px" height="55px" alt="youtube"></a>
@@ -74,14 +105,12 @@
 
 <a href="https://itunes.apple.com/gb/artist/eli-rainsberry/1359194908"><img src="images/buy_itunes.png" width="50px" height="50px" alt="itunes"></a> 
 
-<a href="https://open.spotify.com/artist/6gTMvsgE1Q1iTbowL2JMH0"><img src="images/buy_spot.png" width="45px" height="45px" alt="spotify"></a> 
-
-<br>
+<a href="https://open.spotify.com/artist/6gTMvsgE1Q1iTbowL2JMH0"><img src="images/buy_spot.png" width="45px" height="45px" alt="spotify"></a> <br><br>
+    </h4>
+  </div>
+</div>
 
 </center>
-
-<br><br>
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/932711&color=%23696969&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
 
 <script src="https://code.jquery.com/jquery-1.7.1.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function(){$("#icons [href]").each(function(){-1<window.location.href.indexOf(this.href)&&$(this).addClass("current")});for(var t=document.getElementsByTagName("iframe"),e=0;e<t.length;e++)t[e].getAttribute("data-src"),t[e].setAttribute("src",t[e].getAttribute("data-src"))})</script> <!--original was jquery-2.2.4.min.js-->

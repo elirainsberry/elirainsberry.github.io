@@ -152,7 +152,7 @@ iframe {
 }
 
 #blog, #events {
-    padding-bottom: 4%
+    padding-bottom: 0%
 }
 
 #blog, #music {
@@ -248,6 +248,8 @@ a.icon_blog {
     position: absolute;
     bottom: 1.25vw
 }
+
+
 
 @media (min-width:456px) {
     div.project {
@@ -478,17 +480,12 @@ a.icon_blog {
 }
 
 #events img {
-    margin-left: 6.5em;
+    margin-left: 8em;
 }
 
 #events img {
-    width: 600px !important;
-    height: 709px !important;
-    padding-bottom: 1em
-}
-
-#events ul:last-child img {
-    margin-bottom: 0
+    width: 525px !important;
+    height: 549px !important;
 }
 
 #events li {
