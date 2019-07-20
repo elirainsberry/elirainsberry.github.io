@@ -10,13 +10,13 @@ html {
     box-sizing: border-box
 }
 
-* , :after, :before {
+*, :after, :before {
     box-sizing: inherit
 }
 
 body {
     background-color: #333233;
-    background: url("../images/background.jpg") top center repeat;
+    background: url("/images/background.jpg") top center repeat;
     margin: 1% auto 0 auto;
     min-width: 320px;
     max-width: 960px;
@@ -50,16 +50,16 @@ hr {
     border-top: 1px solid #ccc
 }
 
-img#nav {
+nav img {
     display: block;
     margin: 0 auto
 }
 
-#nav {
-    width: 25%;
+nav {
+    width: 221px;
     z-index: 2;
     position: relative;
-    margin: 0 auto 2% auto !important;
+    margin: 0 auto 2% auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end
@@ -146,12 +146,12 @@ iframe {
     }
 }
 
-#about, #contact, #events, #fourohfour, #portfolio {
+#about, #contact, #fourohfour, #portfolio {
     margin: 0 auto;
     width: 95%
 }
 
-#blog, #events {
+#blog {
     padding-bottom: 0%
 }
 
@@ -457,67 +457,8 @@ a.icon_blog {
     margin-bottom: calc(3% + 1.5em)
 }
 
-#events {
-    font-size: .75em
-}
-
 .none {
     font-size: .8em
-}
-
-#events ul {
-    margin-bottom: 2.5em;
-    border-bottom: 1px dashed #9c9c9c;
-    overflow: auto
-}
-
-#events ul li:last-child {
-    padding-bottom: 1em
-}
-
-#events ul:last-child {
-    border-bottom: 0
-}
-
-#events img {
-    margin-left: 8em;
-}
-
-#events img {
-    width: 525px !important;
-}
-
-#events li {
-    float: none !important;
-    display: list-item !important;
-    line-height: 1.25 !important;
-    list-style-type: none
-}
-
-#events li:nth-child(2) {
-    font-size: 1.25em
-}
-
-#events li:last-child, #events li:nth-child(4) {
-    margin-top: 1em
-}
-
-#events li:last-child a {
-    color: #fff;
-    background-color: #9c9c9c;
-    border: 1px solid #9c9c9c;
-    border-radius: 3px;
-    padding: 8px;
-    display: inline-block;
-    width: 35% !important;
-    margin-bottom: 2em;
-    font-weight: 700
-}
-
-#events li:last-child a:hover {
-    background-color: #fff;
-    border: 1px solid #9c9c9c;
-    color: #ffffff
 }
 
 div.g-recaptcha {
@@ -921,3 +862,4 @@ ul.pagination a:active, ul.pagination a:hover {
 .hljs-emphasis {
     font-style: italic
 }
+
