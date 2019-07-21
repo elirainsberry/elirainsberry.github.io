@@ -1,121 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- HEAD + METADATA -->
-
 <head>
-<title>✽ ✽ ✽ eli rainsberry ✽ ✽ ✽</title> 
+	<title>✽ ✽ ✽ eli rainsberry ✽ ✽ ✽</title> 
 
-<meta name="description" content="composer + sound artist for animation + interaction"> 
+	<meta name="description" content="composer + sound artist for animation + interaction"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
 
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<link href="/css/global.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,600" rel="stylesheet"> 
+	<link rel="shortcut icon" href="/favicon.ico" type="image/eli">
+	<link rel="icon" href="/favicon.ico" type="image/eli">
 
-<link href="css/global.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="music, sound design, sound designer, composer, videogames, video games, audio, media, film, animation, animated shorts, musician, guitarist">
+	<meta name="author" content="eli rainsberry">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,600" rel="stylesheet"> 
+	<meta name="theme-color" content="#3b3b3b" />
+	<meta name="msapplication-navbutton-color" content="#3b3b3b" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#3b3b3b" />
 
-<link rel="shortcut icon" href="/favicon.ico" type="image/eli">
-<link rel="icon" href="/favicon.ico" type="image/eli">
+	<style>
+		#eli-image {
+			max-width: 525px;
+			width: 100%;
 
-<meta charset="UTF-8">
+			align-self: center;
+			flex: 0 0 auto;
+		}
 
-<meta name="keywords" content="music, sound design, sound designer, composer, videogames, video games, audio, media, film, animation, animated shorts, musician, guitarist">
+		#eli-image-container {
+			padding-right: 90px;
+		}
 
-<meta name="author" content="eli rainsberry">
+		/* set up layout for support and stream link sections */
+		#links-section {
+			display: flex;
+			width: 100%;
 
-<style>
-* {
-  box-sizing: border-box;
-}
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-self: flex-end;
+		}
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  height: 10px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-  .events img {
-    width: 100%;	
-  }
-}
-</style>
-
+		.link-column {
+			width: 280px;
+			text-align: center;
+		}
+	</style>
 </head>
 
-<body ontouchstart="">
+<body>
+	<main>
+		<nav>
+			<a href="/index"><img src="images/nav_index.png" width="50px" height="50px" alt="home"></a>
+			<a href="/works"><img src="images/nav_work.png" width="50px" height="50px" alt="works"></a> 
+			<a href="/about"><img src="images/nav_about.png" width="50px" height="50px" alt="about"></a>
+			<a href="mailto:elirainsberry@gmail.com"><img src="images/nav_contact.png" width="50px" height="50px" alt="contact"></a>
+		</nav>
 
-<!-- NAVIGATION -->
+		<div id="eli-image-container">
+			<img id="eli-image" src="images/image-lineart.png" alt="eli"/>
+		</div>
 
-<div id="nav">
+		<div id="links-section">
+			<div class="link-column">
+				<img src="images/text-support.png" height="16px" alt="support"/>
+				<br/>
+				<a href="http://elirainsberry.bandcamp.com"><img src="images/nav_bc.png" width="45px" height="45px" alt="bandcamp"></a>
+				<a href="https://www.itch.io/elirainsberry"><img src="images/nav_itch.png" width="45px" height="45px" alt="itch.io"></a>
+				<a href="http://patreon.com/elirainsberry"><img src="images/nav_patreon.png" width="45px" height="45px" alt="patreon"></a>
+				<a href="http://paypal.me/lizrainsberry"><img src="images/nav_paypal.png" width="45px" height="45px" alt="paypal"></a>
+				<a href="http://ko-fi.com/elirainsberry"><img src="images/nav_kofi.png" width="55px" height="55px" alt="ko-fi"></a>
+			</div>
 
-<a href="/index"> <img src="images/nav_index.png" width="55px" height="55px" alt="home"> </a>
-
-<a href="/works"><img src="images/nav_work.png" width="50px" height="50px" alt="works"></a> 
-
-<a href="/about"><img src="images/nav_about.png" width="50px" height="50px" alt="about"></a>
-
-<a href="mailto:elirainsberry@gmail.com"><img src="images/nav_contact.png" width="50px" height="50px" alt="contact"></a>
-
-</div>
-
-
-<div id="events">
-<img src="images/image-lineart.png" alt="eli"></a>
-</div> 
-
-<center>
-
-<div class="row">
-  <div class="column">
-    <h4><img src="images/text-support.png" width="100px" height="16px" alt="support"></a>
-    <br>
-<a href="http://elirainsberry.bandcamp.com"><img src="images/nav_bc.png" width="45px" height="45px" alt="bandcamp"></a>
-
-<a href="https://www.itch.io/elirainsberry"><img src="images/nav_itch.png" width="45px" height="45px" alt="itch.io"></a>
-
-<a href="http://patreon.com/elirainsberry"><img src="images/nav_patreon.png" width="45px" height="45px" alt="patreon"></a>
-
-<a href="http://paypal.me/lizrainsberry"><img src="images/nav_paypal.png" width="45px" height="45px" alt="paypal"></a>
-
-<a href="http://ko-fi.com/elirainsberry"><img src="images/nav_kofi.png" width="55px" height="55px" alt="ko-fi"></a>
-    </h4>
-
-  </div>
-  <div class="column">
-    <h4><img src="images/text-stream.png" width="100px" height="16px" alt="stream"></a>
-    <br>
-<a href="http://soundcloud.com/elirainsberry"><img src="images/nav_sc.png" width="55px" height="55px" alt="soundcloud"></a>
-
-<a href="https://www.youtube.com/channel/UCv1fHq4h_kGAvQcpq0sAcBA"><img src="images/nav_yt.png" width="50px" height="50px" alt="youtube"></a>
-
-<a href="https://www.vimeo.com/elirainsberry"><img src="images/nav_vim.png" width="45px" height="45px" alt="vimeo"></a> 
-
-<a href="https://itunes.apple.com/gb/artist/eli-rainsberry/1359194908"><img src="images/buy_itunes.png" width="45px" height="45px" alt="itunes"></a> 
-
-<a href="https://open.spotify.com/artist/6gTMvsgE1Q1iTbowL2JMH0"><img src="images/buy_spot.png" width="45px" height="45px" alt="spotify"></a> <br><br>
-    </h4>
-  </div>
-</div>
-
-</center>
-
-
-<script src="https://code.jquery.com/jquery-1.7.1.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function(){$("#icons [href]").each(function(){-1<window.location.href.indexOf(this.href)&&$(this).addClass("current")});for(var t=document.getElementsByTagName("iframe"),e=0;e<t.length;e++)t[e].getAttribute("data-src"),t[e].setAttribute("src",t[e].getAttribute("data-src"))})</script> <!--original was jquery-2.2.4.min.js-->
-
-
-
-
+			<div class="link-column">
+				<img src="images/text-stream.png" height="16px" alt="stream"/>
+				<br/>
+				<a href="http://soundcloud.com/elirainsberry"><img src="images/nav_sc.png" width="55px" height="55px" alt="soundcloud"></a>
+				<a href="https://www.youtube.com/channel/UCv1fHq4h_kGAvQcpq0sAcBA"><img src="images/nav_yt.png" width="50px" height="50px" alt="youtube"></a>
+				<a href="https://www.vimeo.com/elirainsberry"><img src="images/nav_vim.png" width="45px" height="45px" alt="vimeo"></a> 
+				<a href="https://itunes.apple.com/gb/artist/eli-rainsberry/1359194908"><img src="images/buy_itunes.png" width="45px" height="45px" alt="itunes"></a> 
+				<a href="https://open.spotify.com/artist/6gTMvsgE1Q1iTbowL2JMH0"><img src="images/buy_spot.png" width="45px" height="45px" alt="spotify"></a>
+			</div>
+		</div>
+	</main>
 </body></html>
