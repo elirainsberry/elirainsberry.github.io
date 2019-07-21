@@ -22,49 +22,44 @@
 	<meta name="msapplication-navbutton-color" content="#3b3b3b" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="#3b3b3b" />
 
+	<style>
+		#oops-text {
+			font-style: italic;
+			font-size: .7em;
+			line-height: 1.5;
+
+			text-align: center;
+		}
+	</style>
 </head>
 
-<body ontouchstart="">
+<body>
+	<main>
+		<nav>
+			<a href="/index"><img src="images/nav_index.png" width="50px" height="50px" alt="home"></a>
+			<a href="/works"><img src="images/nav_work.png" width="50px" height="50px" alt="works"></a> 
+			<a href="/about"><img src="images/nav_about.png" width="50px" height="50px" alt="about"></a>
+			<a href="mailto:elirainsberry@gmail.com"><img src="images/nav_contact.png" width="50px" height="50px" alt="contact"></a>
+		</nav>
 
-<!-- NAVIGATION -->
+		<!-- to do for this page (see jukio's website for ref)
+		- commissioned illustration (B&W),
+		- showreel video,
+		- listen + buy links for apple, bandcamp, itch.io, + itunes
+		- soundcloud playlist
 
-<div id="nav">
+		gosh this is still in the works -->
 
-<a href="/index"> <img src="images/nav_index.png" width="55px" height="55px" alt="home"> </a>
+		<a href="/index"><img src="images/image-404.png"  width="300px" height="377px" alt="404"></a>
 
-<a href="/works"><img src="images/nav_work.png" width="50px" height="50px" alt="works"></a> 
+		<hr/>
 
-<a href="/about"><img src="images/nav_about.png" width="50px" height="50px" alt="about"></a>
+		<p id="oops-text">
+			oops, this page seems to be broken right now! i'm sorry!! if you're struggling to see a thing, please email me, but in the meantime, please press through the poster to go back to my homepage. thanks
+		</p> 
+	</main>
 
-<a href="mailto:elirainsberry@gmail.com"><img src="images/nav_contact.png" width="50px" height="50px" alt="contact"></a>
-
-</div>
-
-
-<!-- to do for this page (see jukio's website for ref)
-- commissioned illustration (B&W),
-- showreel video,
-- listen + buy links for apple, bandcamp, itch.io, + itunes
-- soundcloud playlist
-
-gosh this is still in the works
-
--->
-
-<br><br>
-<center>
-<a href="/index"><img src="images/image-404.png"  width="300px" height="377px" alt="404"></a>
-
-<div id="fourohfour">
-<li></li><li></li><li>
-oops, this page seems to be broken right now! i'm sorry!! if you're struggling to see a thing, please email me, but in the meantime, please press through the poster to go back to my homepage. thanks
-
-</li>
-</div> 
-
-<script src="https://code.jquery.com/jquery-1.7.1.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function(){$("#icons [href]").each(function(){-1<window.location.href.indexOf(this.href)&&$(this).addClass("current")});for(var t=document.getElementsByTagName("iframe"),e=0;e<t.length;e++)t[e].getAttribute("data-src"),t[e].setAttribute("src",t[e].getAttribute("data-src"))})</script> <!--original was jquery-2.2.4.min.js-->
-
-
-
+	<script src="https://code.jquery.com/jquery-1.7.1.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript">$(document).ready(function(){$("#icons [href]").each(function(){-1<window.location.href.indexOf(this.href)&&$(this).addClass("current")});for(var t=document.getElementsByTagName("iframe"),e=0;e<t.length;e++)t[e].getAttribute("data-src"),t[e].setAttribute("src",t[e].getAttribute("data-src"))})</script> <!--original was jquery-2.2.4.min.js-->
 
 </body></html>
