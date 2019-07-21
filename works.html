@@ -685,8 +685,57 @@
 			</div>
 		</main>
 
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function(){$("#icons [href]").each(function(){-1<window.location.href.indexOf(this.href)&&$(this).addClass("current")});for(var t=document.getElementsByTagName("iframe"),e=0;e<t.length;e++)t[e].getAttribute("data-src"),t[e].setAttribute("src",t[e].getAttribute("data-src"))})</script>
-		<script type="text/javascript">$(document).ready(function(){$(".project a").click(function(){$(this).css("color","#ffca1e")}),$(".project").each(function(){$(this).attr("defaultPos",$(this).index()+1)}),$.fn.resetProject=function(){this.removeClass("focus"),this.find(".projectWrapper").css("background-image","none").removeClass("blur"),this.find("img").removeClass("right"),this.find("div.info").removeAttr("style"),this.insertAfter("div.project:nth-of-type("+this.attr("defaultPos")+")")},$.fn.focusProject=function(t){var i=this.attr("defaultPos")-1-(this.attr("defaultPos")-1)%4+1;this.addClass("focus");var s=this.find("img").attr("src");t>$(window).width()/2&&(this.find("img").addClass("right"),this.find("div.info").css("left","0")),$(this).find(".projectWrapper").addClass("blur"),$(this).find(".blur").css("background-image","url("+s+")"),this.insertBefore("div.project:nth-of-type("+i+")")},$.fn.runFocus=function(t){if(window.matchMedia("(min-width: 456px)").matches){this.hasClass("focus")?this.resetProject():($(".project").each(function(){$(this).resetProject()}),this.focusProject(t));var i=this.find("img").offset().top-($(window).height()/2-this.find("img").height()/2);$("html, body").animate({scrollTop:i},1)}},$(window).resize(function(t){window.matchMedia("(max-width: 455px)").matches&&$(".project").each(function(){$(this).resetProject()})}),$(".project img").on("click",function(t){$(this).parent().runFocus(t.pageX)})})
-	</script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".project a").click(function(){
+					$(this).css("color","#ffca1e")
+				});
+
+				$(".project").each(function(){
+					$(this).attr("defaultPos",$(this).index()+1)
+				});
+
+				$.fn.resetProject=function(){
+					this.removeClass("focus");
+					this.find(".projectWrapper").css("background-image","none").removeClass("blur");
+					this.find("img").removeClass("right");
+					this.find("div.info").removeAttr("style");
+					this.insertAfter("div.project:nth-of-type("+this.attr("defaultPos")+")")
+				};
+
+				$.fn.focusProject=function(t){
+					let i = this.attr("defaultPos")-1-(this.attr("defaultPos")-1)%4+1;
+					this.addClass("focus");
+					let s = this.find("img").attr("src");
+					if (t > $(window).width()/2) {
+						this.find("img").addClass("right");
+						this.find("div.info").css("left","0");
+					}
+					$(this).find(".projectWrapper").addClass("blur");
+					$(this).find(".blur").css("background-image","url("+s+")");
+					this.insertBefore("div.project:nth-of-type("+i+")");
+				};
+
+				$.fn.runFocus=function(t){
+					if (window.matchMedia("(min-width: 456px)").matches) {
+						this.hasClass("focus")?this.resetProject():($(".project").each(function(){$(this).resetProject()}), this.focusProject(t));
+						let i = this.find("img").offset().top-($(window).height()/2-this.find("img").height()/2);
+						$("html, body").animate({scrollTop:i},1)
+					}
+				};
+
+				$(window).resize(function(t){
+					if (window.matchMedia("(max-width: 455px)").matches) {
+						$(".project").each(function(){$(this).resetProject()});
+					}
+				});
+
+				$(".project img").on("click", function(t){
+					$(this).parent().runFocus(t.pageX);
+				});
+			})
+		</script>
 </body>
 </html>

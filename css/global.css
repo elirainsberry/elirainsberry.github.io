@@ -208,8 +208,7 @@ iframe {
 	height: 11vw;	
 }
 
-
-/* Small grid view (portrait iPad) + defaults for grid view */
+/* grid view defaults */
 @media (min-width:456px) {
 	div.project {
 		width: 25%;
@@ -233,10 +232,6 @@ iframe {
 		width: 50%
 	}
 
-	.right {
-		float: right !important
-	}
-
 	.project div.info {
 		display: none
 	}
@@ -247,45 +242,30 @@ iframe {
 		position: absolute
 	}
 
-	.project h2 {
-		font-size: 5vw
+	.right {
+		float: right !important
 	}
 
-	.project h3 {
-		font-size: 2.75vw
+	.project a:active, .project a:hover {
+		color: #e6e6e6 !important
 	}
+}
 
-	.project h4 {
-		font-size: 1.5vw;
-		top: -1vw
-	}
-
+/* Small grid view (portrait iPad) */
+@media (min-width:456px) {
 	.project_desc { font-size: 2.25vw }
 	.project_links { font-size: 2vw }
 	.project_date { font-size: 2vw }
 	.project_tags { font-size: 1.75vw }
 
+	.project_icons {
+		bottom: 6vw;
+		position: absolute;
+	}
+
 	.project_icons a.icon {
-		width: 8vw;
-		height: 8vw;
-	}
-
-	a.icon_project {
-		font-size: 8vw
-	}
-
-	a.icon_album {
-		font-size: 7vw
-	}
-
-	a.icon_blog {
-		right: 12%;
-		top: 10.5vw;
-		font-size: 4vw
-	}
-
-	.project a:active, .project a:hover {
-		color: #e6e6e6 !important
+		width: 6vw;
+		height: 6vw;
 	}
 }
 
@@ -346,18 +326,10 @@ iframe {
 	}
 }
 
-.none {
-	font-size: .8em
-}
-
 
 .bandcamp {
 	height: 120px !important;
 	width: 100%
 }
 
-.bcTrack {
-	height: 42px;
-	width: 100%
-}
 
