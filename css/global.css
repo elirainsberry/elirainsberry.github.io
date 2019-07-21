@@ -139,7 +139,7 @@ iframe {
 
 .blur {
 	filter: brightness(60%);
-    background-size: 50% 50%;
+    background-size: 100%;
 }
 
 .project div.info {
