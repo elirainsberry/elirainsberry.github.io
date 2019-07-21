@@ -6,7 +6,7 @@
 	<meta name="description" content="composer + sound artist for animation + interaction"> 
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
 
-	<link href="css/global.css" rel="stylesheet" type="text/css">
+	<link href="/css/global.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,600" rel="stylesheet"> 
 	<link rel="shortcut icon" href="/favicon.ico" type="image/eli">
 	<link rel="icon" href="/favicon.ico" type="image/eli">
@@ -20,17 +20,6 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#3b3b3b" />
 
 	<style>
-		* {
-			box-sizing: border-box;
-		}
-
-		main {
-			display: flex;
-			flex-direction: column;
-			align-content: stretch;
-			align-items: center;
-		}
-
 		#eli-image {
 			max-width: 525px;
 			width: 100%;
@@ -40,7 +29,7 @@
 		}
 
 		/* set up layout for support and stream link sections */
-		#links {
+		#links-section {
 			display: flex;
 			width: 100%;
 
@@ -58,7 +47,6 @@
 
 <body>
 	<main>
-		<div width="100px" height="100px" style="background: #111;"></div>
 		<nav>
 			<a href="/index"><img src="images/nav_index.png" width="50px" height="50px" alt="home"></a>
 			<a href="/works"><img src="images/nav_work.png" width="50px" height="50px" alt="works"></a> 
@@ -70,7 +58,7 @@
 			<img id="eli-image" src="images/image-lineart.png" alt="eli"/>
 		</div>
 
-		<div id="links">
+		<div id="links-section">
 			<div class="link-column">
 				<img src="images/text-support.png" height="16px" alt="support"/>
 				<br/>
