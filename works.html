@@ -37,7 +37,7 @@
 		</nav>
 		
 		<div id="project-list">
-			<div class='project'>
+			<div class='project' data-bg-image="images/port_NLH_bg.png">
 				<img src='images/port_NLH.jpg' width='240' height='240' alt='No Longer Home'/>
 				<div class='projectWrapper'></div>
 				<div class='info'>
@@ -708,13 +708,15 @@
 				$.fn.focusProject=function(t){
 					let i = this.attr("defaultPos")-1-(this.attr("defaultPos")-1)%4+1;
 					this.addClass("focus");
+					let bg_img = this.attr("data-bg-image") || this.find("img").attr("src");
+
 					let s = this.find("img").attr("src");
 					if (t > $(window).width()/2) {
 						this.find("img").addClass("right");
 						this.find("div.info").css("left","0");
 					}
 					$(this).find(".projectWrapper").addClass("blur");
-					$(this).find(".blur").css("background-image","url("+s+")");
+					$(this).find(".blur").css("background-image","url("+bg_img+")");
 					this.insertBefore("div.project:nth-of-type("+i+")");
 				};
 
