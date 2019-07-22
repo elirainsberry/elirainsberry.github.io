@@ -23,7 +23,27 @@
 	<style>
 		#project-list {
 			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
 		}
+
+		/* make sure we don't flex within a project */
+		.project.focus, .project.focus .info {
+			display: block;
+		}
+
+		.project.tag-filtered {
+			display: none !important;
+		}
+
+		.project.side-swapped img {
+			float: right;
+		}
+		
+		.project.side-swapped div.info {
+			left: 0;
+		}
+
 	</style>
 </head>
 
@@ -56,7 +76,7 @@
 						<a class='icon icon_youtube' href="https://www.youtube.com/watch?v=-hxPWxeEtNE"></a> 
 						<a class='icon icon_web' href="https://humblegrove.com"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -74,7 +94,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_web' href="http://wilmotswarehouse.com"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -89,7 +109,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_web' href="https://www.georgebatchelor.com/birdalone"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -103,7 +123,7 @@
 						<a class='icon icon_vimeo' href=""></a>
 						<a class='icon icon_soundcloud' href=""></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a></p>
 				</div>
 			</div> 
 
@@ -124,7 +144,7 @@
 						<a class='icon icon_youtube' href="https://www.youtube.com/playlist?list=PLnHKOilMP-9NDHofLiYrm3h9oT6lsnPBn"></a>
 						<a class='icon icon_web' href="http://jetstreamgame.com"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div> 
 
@@ -140,7 +160,7 @@
 						<a class='icon icon_soundcloud' href="https://soundcloud.com/elirainsberry/sets/l-i-m-i-t-a-selection-of-soundscapes"></a>
 						<a class='icon icon_web' href="https://www.vam.ac.uk/event/1dDqqGR6/friday-late-january-2019"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/soundart">sound art</a>, <a href="/works/commissions">commissions</a>,</p>
+					<p class='project_tags'>tags: <a href="#soundart">sound art</a>, <a href="#commissions">commissions</a></p>
 				</div>
 			</div> 
 
@@ -159,7 +179,7 @@
 						<a class='icon icon_watch' href="https://player.bfi.org.uk/free/film/watch-meteorlight-2018-online"></a>
 						<a class='icon icon_web' href="http://jonnyeveson.com/meteorlight"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div> 
 
@@ -173,7 +193,7 @@
 						<a class='icon icon_vimeo' href="https://vimeo.com/298219553"></a>
 						<a class='icon icon_soundcloud' href="https://soundcloud.com/elirainsberry/kevin-original-score"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div> 
 
@@ -186,7 +206,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_web' href="https://www.dymphies.com/second-floor-trailer"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div> 
 
@@ -199,7 +219,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_web' href="https://unbound.com/books/the-carpet-merchant-voli/"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/commissions">commissions</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#commissions">commissions</a></p>
 				</div>
 			</div> 
 
@@ -213,7 +233,7 @@
 						<a class='icon icon_soundcloud' href="https://soundcloud.com/elirainsberry/ailleurs-elsewhere-original-score"></a>
 						<a class='icon icon_vimeo' href="https://vimeo.com/271736459"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>, <a href="/works/film">film</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#sounddesign">sound design</a>, <a href="#film">film</a></p>
 				</div>
 			</div> 
 
@@ -228,7 +248,7 @@
 						<a class='icon icon_soundcloud' href="https://soundcloud.com/elirainsberry/long-distance-train-original-score"></a>
 						<a class='icon icon_vimeo' href="https://vimeo.com/265631161"></a>
 					</div>
-					<p class='project_tags'><a href="/works/music">music</a>, <a href="/works/film">film</a>,</p>
+					<p class='project_tags'><a href="#music">music</a>, <a href="#film">film</a></p>
 				</div>
 			</div> 
 
@@ -242,7 +262,7 @@
 						<a class='icon icon_soundcloud' href="https://soundcloud.com/elirainsberry/baby-teeth-original-score"></a>
 						<a class='icon icon_vimeo' href="https://vimeo.com/268124003"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>, <a href="/works/film">film</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#sounddesign">sound design</a>, <a href="#film">film</a></p>
 				</div>
 			</div> 
 
@@ -257,7 +277,7 @@
 						<a class='icon icon_soundcloud' href="https://soundcloud.com/elirainsberry/friend-or-photo-original-score"></a>
 						<a class='icon icon_vimeo' href="https://vimeo.com/264694671"></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>, <a href="/works/film">film</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#sounddesign">sound design</a>, <a href="#film">film</a></p>
 				</div>
 			</div>
 
@@ -282,7 +302,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/sets/sure-footing-ost-sample-tracks'></a>
 						<a class='icon icon_web' href='http://www.tableflipgames.co.uk/sure-footing/'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -296,7 +316,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/sets/the-world-in-deeper-inspection'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/commissions">commissions</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#commissions">commissions</a></p>
 				</div>
 			</div>
 
@@ -310,7 +330,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/sets/the-world-in-deeper-inspection'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/commissions">commissions</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#commissions">commissions</a></p>
 				</div>
 			</div>
 
@@ -324,7 +344,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/sets/the-world-in-deeper-inspection'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/commissions">commissions</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#commissions">commissions</a></p>
 				</div>
 			</div>
 
@@ -338,7 +358,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/cascading-colour-original-instrumental-piece'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -352,7 +372,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/run-sound-art-for-animated-short'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/255376677'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -367,7 +387,7 @@
 						<a class='icon icon_vimeo' href='https://vimeo.com/243564788'></a>
 						<a class='icon icon_itch' href='http://elirainsberry.itch.io/geomet'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/soundart">sound art</a>,</p>
+					<p class='project_tags'>tags: <a href="#soundart">sound art</a></p>
 				</div>
 			</div>
 
@@ -381,7 +401,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/danse-danse-zuri-feat-isabella-stochetti'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/album/3151346/video/236273642'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>,  <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>,  <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -394,7 +414,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_vimeo' href='https://vimeo.com/album/3151346/video/214734665'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -408,7 +428,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/ghost-story-original-score'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/album/3151346/video/214875839'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -423,7 +443,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/the-recollected-body'></a>
 						<a class='icon icon_web' href='https://www.izzieca.com/the-recollected-body'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/soundart">sound art</a>, <a href="/works/interdisciplinary">interdisciplinary</a>,</p>
+					<p class='project_tags'>tags: <a href="#soundart">sound art</a>, <a href="#interdisciplinary">interdisciplinary</a></p>
 				</div>
 			</div>
 
@@ -437,7 +457,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_bandcamp' href='https://paws.bandcamp.com/album/pokisfiori'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a></p>
 				</div>
 			</div>
 
@@ -451,7 +471,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/a-subconscious-stream'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/202478444'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/soundart">sound art</a>,</p>
+					<p class='project_tags'>tags: <a href="#soundart">sound art</a></p>
 				</div>
 			</div>
 
@@ -466,7 +486,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/ice-iii-collaborative-piece-for-performance'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/202476976'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/soundart">sound art</a>, <a href="/works/interdisciplinary">interdisciplinary</a>,</p>
+					<p class='project_tags'>tags: <a href="#soundart">sound art</a>, <a href="#interdisciplinary">interdisciplinary</a></p>
 				</div>
 			</div>
 
@@ -479,7 +499,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_youtube' href='https://www.youtube.com/watch?v=q4rqYu6MnIQ'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -492,7 +512,7 @@
 					<div class='project_icons'>
 						<a class='icon icon_vimeo' href='https://vimeo.com/258930869'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -506,7 +526,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/cascading-consumptions-original-vsmall-instrumental-piece'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/230334432'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -520,7 +540,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/bleuet-fraise-original-score'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/161200266'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a></p>
 				</div>
 			</div>
 
@@ -536,7 +556,7 @@
 						<a class='icon icon_itch' href='https://elirainsberry.itch.io/hashtag-dungeon-ost'></a>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/sets/hashtag-dungeon-ost-sample'></a>
 					</div> 
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a></p>
 				</div> 
 			</div>
 
@@ -552,7 +572,7 @@
 						<a class='icon icon_itch' href='https://elirainsberry.itch.io/retool-ost'></a>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/exploration-escape-retool-ost-sample'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/games">videogames</a>,  <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#games">videogames</a>,  <a href="#music">music</a></p>
 				</div>
 			</div>
 
@@ -566,7 +586,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/osun-original-score'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/album/3151346/video/167327992'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -580,7 +600,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/one-step-forward-original-score-one-min-version'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/album/3151346/video/164491435'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -594,7 +614,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/worry-worms-2016-original-score'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/album/3151346/video/166483988'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a></p>
 				</div>
 			</div>
 
@@ -608,7 +628,7 @@
 						<a class='icon icon_vimeo' href='https://vimeo.com/197884047'></a>
 						<a class='icon icon_web' href='https://puls-film.tumblr.com'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -622,7 +642,7 @@
 						<a class='icon icon_youtube' href='https://www.youtube.com/watch?v=0QGGC-TMTaY'></a>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/finn-original-score'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a></p>
 				</div>
 			</div>
 
@@ -636,7 +656,7 @@
 						<a class='icon icon_youtube' href='https://www.youtube.com/watch?v=YzVMPiJ55ao'></a>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/hedgehog-and-i-original-theme'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a></p>
 				</div>
 			</div>
 
@@ -651,7 +671,7 @@
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/articulating-forms'></a>
 						<a class='icon icon_vimeo' href='https://vimeo.com/140301675'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/music">music</a>, <a href="/works/interdisciplinary">interdisciplinary</a>,</p>
+					<p class='project_tags'>tags: <a href="#music">music</a>, <a href="#interdisciplinary">interdisciplinary</a></p>
 				</div>
 			</div>
 
@@ -665,7 +685,7 @@
 						<a class='icon icon_youtube' href='https://vimeo.com/113121028'></a>
 						<a class='icon icon_soundcloud' href='https://soundcloud.com/elirainsberry/glitter-warriors-ost-stream-original-score'></a>
 					</div>
-					<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>, <a href="/works/sounddesign">sound design</a>,</p>
+					<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a>, <a href="#sounddesign">sound design</a></p>
 				</div>
 			</div>
 
@@ -679,7 +699,7 @@
 						<div class='project_icons'>
 							<a class='icon icon_youtube' href='https://www.youtube.com/playlist?list=PLnHKOilMP-9MXRJTS13Ls7ONJyTdROqrY'></a>
 						</div>
-						<p class='project_tags'>tags: <a href="/works/film">film</a>, <a href="/works/music">music</a>,</p>
+						<p class='project_tags'>tags: <a href="#film">film</a>, <a href="#music">music</a></p>
 					</div>
 				</div>
 			</div>
@@ -699,30 +719,46 @@
 
 				$.fn.resetProject=function(){
 					this.removeClass("focus");
+					this.removeClass("side-swapped");
 					this.find(".projectWrapper").css("background-image","none").removeClass("blur");
 					this.find("img").removeClass("right");
 					this.find("div.info").removeAttr("style");
-					this.insertAfter("div.project:nth-of-type("+this.attr("defaultPos")+")")
+					this.insertAfter("div.project:nth-of-type("+this.attr("defaultPos")+")");
 				};
 
-				$.fn.focusProject=function(t){
-					let i = this.attr("defaultPos")-1-(this.attr("defaultPos")-1)%4+1;
+				$.fn.focusProject=function(swap_sides){
 					this.addClass("focus");
-					let bg_img = this.attr("data-bg-image") || this.find("img").attr("src");
-
-					let s = this.find("img").attr("src");
-					if (t > $(window).width()/2) {
-						this.find("img").addClass("right");
-						this.find("div.info").css("left","0");
+					if (swap_sides) {
+						this.addClass("side-swapped");
 					}
-					$(this).find(".projectWrapper").addClass("blur");
-					$(this).find(".blur").css("background-image","url("+bg_img+")");
-					this.insertBefore("div.project:nth-of-type("+i+")");
+
+					let bg_img = this.data("bg-image") || this.find("img").attr("src");
+
+					this.find(".projectWrapper").addClass("blur");
+					this.find(".blur").css("background-image","url("+bg_img+")");
+
+					let visible_project_list = this.parent().find(".project:not(.tag-filtered)");
+					let current_idx = visible_project_list.index(this);
+					if (current_idx === -1) {
+						console.error("This shouldn't happen");
+						return;
+					}
+
+					// Get next lowest multiple of four - so we can keep our grid gap free
+					let floored_idx = current_idx & ~3;
+
+					this.insertBefore(visible_project_list[floored_idx]);
 				};
 
-				$.fn.runFocus=function(t){
+				$.fn.runFocus=function(swap_sides){
 					if (window.matchMedia("(min-width: 456px)").matches) {
-						this.hasClass("focus")?this.resetProject():($(".project").each(function(){$(this).resetProject()}), this.focusProject(t));
+						if (this.hasClass("focus")){
+							this.resetProject()
+						} else {
+							$(".project").each(function(){ $(this).resetProject() });
+							this.focusProject(swap_sides);
+						}
+
 						let i = this.find("img").offset().top-($(window).height()/2-this.find("img").height()/2);
 						$("html, body").animate({scrollTop:i},1)
 					}
@@ -730,13 +766,54 @@
 
 				$(window).resize(function(t){
 					if (window.matchMedia("(max-width: 455px)").matches) {
-						$(".project").each(function(){$(this).resetProject()});
+						$(".project").each(function(){ $(this).resetProject() });
 					}
 				});
 
 				$(".project img").on("click", function(t){
-					$(this).parent().runFocus(t.pageX);
+					$(this).parent().runFocus(t.pageX > $(window).width()/2);
 				});
+
+				function update_tag_filter() {
+					let tag = window.location.hash;
+
+					// Reset current filter state
+					$(".tag-filtered").removeClass("tag-filtered");
+					if (!tag) {
+						return;
+					}
+
+					// Mark projects that don't mention the new tag
+					// with tag-filtered
+					$(".project_tags").each(function() {
+						let visible = false;
+
+						$(this).find("a").each(function() {
+							if (this.hash === tag) {
+								visible = true;
+							}
+						});
+
+						if (!visible) {
+							let project_el = $(this).parent().parent();
+							project_el.addClass("tag-filtered");
+						}
+					});
+
+					// Reshuffle projects if we have a visisble focussed project.
+					// Filtering can introduce gaps in the grid
+					let prev_focussed = $(".project.focus:not(.tag-filtered)");
+					if (!prev_focussed.length) {
+						return;
+					}
+
+					let swap_sides = prev_focussed.hasClass("side-swapped");
+					$(".project").each(function(){ $(this).resetProject() });
+					prev_focussed.runFocus(swap_sides);
+				}
+
+				$(window).on("hashchange", update_tag_filter); 
+				update_tag_filter();
 			})
 		</script>
 </body>
