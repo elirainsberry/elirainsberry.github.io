@@ -138,7 +138,7 @@ iframe {
 }
 
 .blur {
-	filter: brightness(45%);
+	filter: brightness(33%);
     background-size: 50%;
 }
 
