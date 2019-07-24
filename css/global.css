@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-	font-family: "Roboto Mono";
+	font-family: "Inconsolata";
 	font-weight: 400;
 	font-style: normal
 }
@@ -18,7 +18,7 @@ body {
 	margin: 1% auto 0 auto;
 	min-width: 320px;
 	max-width: 960px;
-	font-family: "Roboto Mono", sans-serif;
+	font-family: "Inconsolata", monospace;
 	font-size: 24px;
 	color: #e6e6e6;
 	text-rendering: optimizeLegibility;
@@ -38,7 +38,7 @@ main {
 }
 
 button, input, select, textarea {
-	font-family: "Roboto Mono"
+	font-family: "Inconsolata"
 }
 
 a {
@@ -143,7 +143,7 @@ iframe {
 }
 
 .project div.info {
-	font-family: "Roboto Mono"
+	font-family: "Inconsolata"
 	line-height: 1;
 	left: 50%;
 	width: 50%;
@@ -165,7 +165,7 @@ iframe {
 }
 
 .project_icons {
-	font-family: "Roboto Mono"
+	font-family: "Inconsolata"
 	width: 100%
 }
 
