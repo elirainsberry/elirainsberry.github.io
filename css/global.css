@@ -15,7 +15,7 @@ html {
 
 body {
 	background: #333233 url("/images/background.png") top center repeat;
-    background-size: 50%;
+    background-size: 25%;
 	margin: 1% auto 0 auto;
 	min-width: 320px;
 	max-width: 960px;
