@@ -306,7 +306,7 @@ iframe {
 		padding: 4% 4% 8% 4%;
 		width: 100%;
 		left: 0;
-		border-bottom: 4px solid #e0ffff
+		border-bottom: 0px solid #e0ffff
 	}
 
 	.project_desc { font-size: 4vw; margin-bottom: 5px }
