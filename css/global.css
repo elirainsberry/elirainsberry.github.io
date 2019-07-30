@@ -15,7 +15,7 @@ html {
 
 body {
 	background: #333233 url("/images/background.png") top center repeat;
-    background-size: 20%;
+    background-size: 23.5%;
 	margin: 1% auto 0 auto;
 	min-width: 320px;
 	max-width: 960px;
@@ -306,7 +306,7 @@ iframe {
 		padding: 4% 4% 8% 4%;
 		width: 100%;
 		left: 0;
-		border-bottom: 0px solid #e0ffff
+		border-bottom: 0px solid #333233
 	}
 
 	.project_desc { font-size: 4vw; margin-bottom: 5px }
