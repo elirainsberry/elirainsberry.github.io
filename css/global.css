@@ -52,7 +52,7 @@ a:hover {
 }
 
 a:active {
-	color: #333
+	color: #5b5b5b
 }
 
 hr {
@@ -172,11 +172,13 @@ iframe {
 }
 
 .project_desc {
+	color: #e6e6e6
 	margin-top: 0px;
 	line-height: 1;
 }
 
 .project_date {
+	color: #e6e6e6
 	margin: 0px;
 }
 
