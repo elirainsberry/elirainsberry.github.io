@@ -163,7 +163,7 @@ iframe {
 }
 
 .project a:hover {
-	color: #9C9C9C;
+	color: #9C9C9C !important
 }
 
 .project_icons {
