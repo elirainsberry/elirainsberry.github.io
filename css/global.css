@@ -48,11 +48,11 @@ a {
 }
 
 a:hover {
-	color: #9C9C9C
+	color: #9C9C9C;
 }
 
 a:active {
-	color: #5b5b5b
+	color: #5b5b5b;
 }
 
 hr {
@@ -145,13 +145,12 @@ iframe {
 
 .project div.info {
 	font-family: "Inconsolata"
-	color: #e6e6e6
+	color: #e6e6e6;
 	line-height: 1;
 	left: 50%;
 	width: 50%;
 	min-height: 100%;
 	font-size: 8px;
-	color: #f0f0f0
 	padding: 3%
 }
 
@@ -160,11 +159,11 @@ iframe {
 }
 
 .project a {
-	color: #e6e6e6
+	color: #e6e6e6;
 }
 
 .project a:hover {
-	color: #9C9C9C
+	color: #9C9C9C;
 }
 
 .project_icons {
@@ -173,18 +172,18 @@ iframe {
 }
 
 .project_desc {
-	color: #e6e6e6
+	color: #e6e6e6;
 	margin-top: 0px;
 	line-height: 1;
 }
 
 .project_date {
-	color: #e6e6e6
+	color: #e6e6e6;
 	margin: 0px;
 }
 
 .project_links {
-	color: #e6e6e6
+	color: #e6e6e6;
 	margin-top: 0px;
 }
 
@@ -326,12 +325,12 @@ iframe {
 	}
 
 	.project:last-of-type div.info {
-		color: #e9e9e9
+		color: #e9e9e9;
 		border-bottom: 0
 	}
 
 	.project a:active {
-		color: #d9ead3
+		color: #9C9C9C;
 	}
 }
 
