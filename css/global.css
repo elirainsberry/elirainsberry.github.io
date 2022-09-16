@@ -196,11 +196,11 @@ iframe {
 	display: inline-block;
 }
 
-.icon.icon_soundcloud { content: url(/images/nav_sc.png) }
-.icon.icon_youtube { content: url(/images/nav_yt.png) }
-.icon.icon_web { content: url(/images/nav_web.png) }
-.icon.icon_vimeo { content: url(/images/nav_vim.png) }
-.icon.icon_watch { content: url(/images/nav_watch.png) }
+.icon.icon_soundcloud { content: url(/images/buy_sc.png) }
+.icon.icon_youtube { content: url(/images/buy_yt.png) }
+.icon.icon_web { content: url(/images/buy_web.png) }
+.icon.icon_vimeo { content: url(/images/buy_vim.png) }
+.icon.icon_watch { content: url(/images/buy_watch.png) }
 .icon.icon_bandcamp { content: url(/images/buy_bc.png) }
 .icon.icon_itch { content: url(/images/buy_itch.png) }
 .icon.icon_spotify { content: url(/images/buy_spot.png) }
