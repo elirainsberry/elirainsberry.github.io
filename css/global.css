@@ -325,6 +325,7 @@ iframe {
 	}
 
 	.project:last-of-type div.info {
+		color: #e9e9e9
 		border-bottom: 0
 	}
 
