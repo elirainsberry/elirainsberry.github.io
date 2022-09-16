@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-	color: #5b5b5b
+	color: #9C9C9C
 }
 
 a:active {
@@ -151,8 +151,8 @@ iframe {
 	width: 50%;
 	min-height: 100%;
 	font-size: 8px;
-	font-color: #f0f0f0
-	padding: 5%
+	color: #f0f0f0
+	padding: 3%
 }
 
 .hide {
@@ -184,6 +184,7 @@ iframe {
 }
 
 .project_links {
+	color: #e6e6e6
 	margin-top: 0px;
 }
 
