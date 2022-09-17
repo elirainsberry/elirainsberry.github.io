@@ -43,7 +43,7 @@ button, input, select, textarea {
 }
 
 a {
-	color: #5b5b5b;
+	color: #444444;
 	text-decoration: none
 }
 
@@ -52,7 +52,7 @@ a:hover {
 }
 
 a:active {
-	color: #5b5b5b;
+	color: #444444;
 }
 
 hr {
@@ -159,7 +159,7 @@ iframe {
 }
 
 .project a {
-	color: #e6e6e6;
+	color: #9C9C9C !important
 }
 
 .project a:hover {
