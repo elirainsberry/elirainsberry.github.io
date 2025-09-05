@@ -38,6 +38,10 @@ main {
 	align-items: center;
 }
 
+audio {
+    color-scheme: dark;
+}
+
 button, input, select, textarea {
 	font-family: "Inconsolata"
 }
@@ -338,8 +342,4 @@ iframe {
 .bandcamp {
 	height: 120px !important;
 	width: 100%
-}
-
-audio {
-    color-scheme: dark;
 }
