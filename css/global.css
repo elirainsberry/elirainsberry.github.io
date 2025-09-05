@@ -340,4 +340,6 @@ iframe {
 	width: 100%
 }
 
-
+audio {
+    background-color: #757575;
+}
